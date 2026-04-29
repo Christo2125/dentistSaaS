@@ -88,6 +88,29 @@ h1, h2, h3, h4, h5, h6 {
   backdrop-filter: blur(8px);
 }
 
+.navbar .nav-link {
+  color: var(--text-light) !important;
+  transition: all 0.2s ease;
+  position: relative;
+  padding-bottom: 8px !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--primary-blue) !important;
+}
+
+.navbar .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 2px;
+  background-color: var(--primary-blue);
+  border-radius: 2px;
+}
+
 /* Sections */
 .hero-section {
   background: linear-gradient(135deg, var(--light-blue) 0%, var(--bg-white) 100%);

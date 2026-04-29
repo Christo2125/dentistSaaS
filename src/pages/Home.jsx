@@ -18,17 +18,14 @@ const Home = () => {
                 Appointments, billing, patient records, insurance, and analytics — all in one powerful system built for modern dental practices.
               </p>
               <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-                <Button as={Link} to="/contact" variant="primary" size="lg" className="px-4 py-3">
+                <Button as={Link} to="/pricing" variant="primary" size="lg" className="px-4 py-3">
                   Book Demo
-                </Button>
-                <Button variant="outline-primary" size="lg" className="px-4 py-3 d-flex align-items-center justify-content-center">
-                  Watch Demo <BsArrowRight className="ms-2" />
                 </Button>
               </div>
             </Col>
             <Col lg={6}>
               <div className="dashboard-mockup">
-                <img src="/mockup.png" alt="DentalDash Dashboard Interface" className="img-fluid" />
+                <img src="mockup.png" alt="DentalDash Dashboard Interface" className="img-fluid" />
               </div>
             </Col>
           </Row>
@@ -279,10 +276,22 @@ const Home = () => {
             Join thousands of clinics upgrading to the modern dental OS.
           </p>
           <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-            <Button as={Link} to="/contact" variant="light" size="lg" className="px-5 py-3 fw-bold text-primary">
+            <Button 
+              as={Link} 
+              to="/pricing" 
+              variant="light" 
+              size="lg" 
+              className="px-5 py-3 fw-bold text-primary"
+            >
               Start Free Trial
             </Button>
-            <Button as={Link} to="/contact" variant="outline-light" size="lg" className="px-5 py-3 fw-bold border-2">
+            <Button 
+              as={Link} 
+              to="/pricing" 
+              variant="outline-light" 
+              size="lg" 
+              className="px-5 py-3 fw-bold border-2"
+            >
               Book Demo
             </Button>
           </div>

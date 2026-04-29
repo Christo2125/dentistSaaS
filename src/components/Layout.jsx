@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, NavLink } from "react-router-dom";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 
 const Layout = () => {
@@ -11,34 +11,27 @@ const Layout = () => {
             to="/"
             className="fw-bold text-primary d-flex align-items-center"
           >
-            <span style={{ fontSize: "1.5rem", marginRight: "8px" }}>🦷</span>
+            <span style={{ fontSize: "1.5rem", marginRight: "8px" }}></span>
             <span style={{ fontSize: "1.4rem" }}>DentalDash</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
-              <Nav.Link as={Link} to="/features" className="fw-medium mx-2">
+              <Nav.Link as={NavLink} to="/features" className="fw-medium mx-2">
                 Features
               </Nav.Link>
-              <Nav.Link as={Link} to="/solutions" className="fw-medium mx-2">
+              <Nav.Link as={NavLink} to="/solutions" className="fw-medium mx-2">
                 Solutions
               </Nav.Link>
-              <Nav.Link as={Link} to="/pricing" className="fw-medium mx-2">
+              <Nav.Link as={NavLink} to="/pricing" className="fw-medium mx-2">
                 Pricing
               </Nav.Link>
-              <Nav.Link as={Link} to="/resources" className="fw-medium mx-2">
+              <Nav.Link as={NavLink} to="/resources" className="fw-medium mx-2">
                 Resources
               </Nav.Link>
             </Nav>
             <div className="d-flex align-items-center">
-              <Nav.Link
-                as={Link}
-                to="/contact"
-                className="fw-medium me-4 text-dark"
-              >
-                Login
-              </Nav.Link>
-              <Button as={Link} to="/contact" variant="primary">
+              <Button as={Link} to="/pricing" variant="primary">
                 Book Demo
               </Button>
             </div>
@@ -55,7 +48,7 @@ const Layout = () => {
           <div className="row mt-4 justify-content-center">
             <div className="col-lg-4 mb-4 mb-lg-0">
               <h5 className="fw-bold text-primary mb-3 d-flex align-items-center">
-                <span style={{ marginRight: "8px" }}>🦷</span> DentalDash
+                <span style={{ marginRight: "8px" }}></span> DentalDash
               </h5>
               <p className="text-muted-foreground w-75 pe-3">
                 Run your entire dental clinic on one powerful platform.
@@ -120,7 +113,7 @@ const Layout = () => {
                 </li>
                 <li className="mb-2">
                   <Link
-                    to="/contact"
+                    to="/pricing"
                     className="text-muted-foreground text-decoration-none"
                   >
                     Contact

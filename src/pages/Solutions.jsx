@@ -1,4 +1,5 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { BsBuilding, BsBuildings, BsGlobe } from 'react-icons/bs';
 
 const Solutions = () => {
@@ -55,7 +56,7 @@ const Solutions = () => {
                     <li className="mb-2">✓ Multi-branch revenue analytics</li>
                     <li className="mb-2">✓ Cross-location staff coordination</li>
                   </ul>
-                  <Button variant="primary" className="w-100 mt-auto">Book a Consultation</Button>
+                  <Button as={Link} to="/pricing" variant="primary" className="w-100 mt-auto">Book a Consultation</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -76,7 +77,7 @@ const Solutions = () => {
                     <li className="mb-2">✓ Advanced BI data integrations</li>
                     <li className="mb-2">✓ Dedicated account manager</li>
                   </ul>
-                  <Button variant="outline-primary" className="w-100 mt-auto">Contact Sales</Button>
+                  <Button as={Link} to="/pricing" variant="outline-primary" className="w-100 mt-auto">Contact Sales</Button>
                 </Card.Body>
               </Card>
             </Col>
